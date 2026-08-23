@@ -1,0 +1,7 @@
+# Local dev on the Mac only — auto-loaded when no -f flags are given.
+services:
+  app:
+    ports:
+      # Host port 3004 — 3000 (re:Fresh), 3001 (jobAppTracker),
+      # 3002 (filmDB/MediaVault), and 3003 (JingleJotter) are taken.
+      - "3004:3000"

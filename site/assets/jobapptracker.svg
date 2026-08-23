@@ -1,0 +1,98 @@
+<svg viewBox="0 0 1200 770" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Illustrative pipeline board in the style of the Job Application Tracker UI -->
+  <rect width="1200" height="770" fill="#f4f6f9"/>
+
+  <!-- top bar -->
+  <rect width="1200" height="64" fill="#ffffff"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#e4e8ee" stroke-width="2"/>
+  <rect x="36" y="20" width="24" height="24" rx="6" fill="#5b8def"/>
+  <text x="72" y="38" font-size="17" font-weight="bold" fill="#1d2635">Job Application Tracker</text>
+  <text x="1035" y="38" font-size="14" fill="#647082">Mark Watts</text>
+  <circle cx="1155" cy="32" r="14" fill="#e8eefb"/>
+  <text x="1155" y="37" font-size="13" font-weight="bold" fill="#5b8def" text-anchor="middle">M</text>
+
+  <!-- stats strip -->
+  <g font-size="13" fill="#647082">
+    <rect x="36" y="88" width="270" height="86" rx="12" fill="#ffffff" stroke="#e4e8ee"/>
+    <text x="60" y="120">Active applications</text>
+    <text x="60" y="156" font-size="28" font-weight="bold" fill="#1d2635">14</text>
+    <rect x="322" y="88" width="270" height="86" rx="12" fill="#ffffff" stroke="#e4e8ee"/>
+    <text x="346" y="120">Interviews this week</text>
+    <text x="346" y="156" font-size="28" font-weight="bold" fill="#1d2635">3</text>
+    <rect x="608" y="88" width="270" height="86" rx="12" fill="#ffffff" stroke="#e4e8ee"/>
+    <text x="632" y="120">Awaiting reply</text>
+    <text x="632" y="156" font-size="28" font-weight="bold" fill="#1d2635">6</text>
+    <rect x="894" y="88" width="270" height="86" rx="12" fill="#ffffff" stroke="#e4e8ee"/>
+    <text x="918" y="120">Offers</text>
+    <text x="918" y="156" font-size="28" font-weight="bold" fill="#2f9e6e">1</text>
+  </g>
+
+  <!-- pipeline columns -->
+  <g font-size="12">
+    <!-- APPLIED -->
+    <text x="36" y="222" font-size="13" font-weight="bold" fill="#647082" letter-spacing="1">APPLIED</text>
+    <rect x="36" y="238" width="270" height="120" rx="12" fill="#ffffff" stroke="#e4e8ee"/>
+    <text x="58" y="268" font-size="14" font-weight="bold" fill="#1d2635">Head of Cyber Security</text>
+    <text x="58" y="290" fill="#647082">Global Investment Firm · London</text>
+    <rect x="58" y="308" width="64" height="24" rx="12" fill="#e8eefb"/>
+    <text x="90" y="324" fill="#4a70c4" text-anchor="middle">Applied</text>
+    <text x="240" y="324" fill="#93a0b4">1w ago</text>
+
+    <rect x="36" y="374" width="270" height="120" rx="12" fill="#ffffff" stroke="#e4e8ee"/>
+    <text x="58" y="404" font-size="14" font-weight="bold" fill="#1d2635">Director of InfoSec, GRC</text>
+    <text x="58" y="426" fill="#647082">FinTech · Hybrid</text>
+    <rect x="58" y="444" width="64" height="24" rx="12" fill="#e8eefb"/>
+    <text x="90" y="460" fill="#4a70c4" text-anchor="middle">Applied</text>
+    <text x="240" y="460" fill="#93a0b4">5d ago</text>
+
+    <rect x="36" y="510" width="270" height="120" rx="12" fill="#ffffff" stroke="#e4e8ee"/>
+    <text x="58" y="540" font-size="14" font-weight="bold" fill="#1d2635">CISO Director</text>
+    <text x="58" y="562" fill="#647082">Engineering · Leatherhead</text>
+    <rect x="58" y="580" width="64" height="24" rx="12" fill="#e8eefb"/>
+    <text x="90" y="596" fill="#4a70c4" text-anchor="middle">Applied</text>
+    <text x="240" y="596" fill="#93a0b4">1w ago</text>
+
+    <!-- SCREENING -->
+    <text x="322" y="222" font-size="13" font-weight="bold" fill="#647082" letter-spacing="1">SCREENING</text>
+    <rect x="322" y="238" width="270" height="120" rx="12" fill="#ffffff" stroke="#e4e8ee"/>
+    <text x="344" y="268" font-size="14" font-weight="bold" fill="#1d2635">Cyber Security Manager</text>
+    <text x="344" y="290" fill="#647082">Retail Group · Hybrid</text>
+    <rect x="344" y="308" width="102" height="24" rx="12" fill="#fdf1de"/>
+    <text x="395" y="324" fill="#b07c1f" text-anchor="middle">Recruiter call</text>
+    <text x="526" y="324" fill="#93a0b4">Tue</text>
+
+    <rect x="322" y="374" width="270" height="120" rx="12" fill="#ffffff" stroke="#e4e8ee"/>
+    <text x="344" y="404" font-size="14" font-weight="bold" fill="#1d2635">Head of GRC</text>
+    <text x="344" y="426" fill="#647082">Insurance · London</text>
+    <rect x="344" y="444" width="80" height="24" rx="12" fill="#fdf1de"/>
+    <text x="384" y="460" fill="#b07c1f" text-anchor="middle">Screening</text>
+    <text x="526" y="460" fill="#93a0b4">3d ago</text>
+
+    <!-- INTERVIEW -->
+    <text x="608" y="222" font-size="13" font-weight="bold" fill="#647082" letter-spacing="1">INTERVIEW</text>
+    <rect x="608" y="238" width="270" height="120" rx="12" fill="#ffffff" stroke="#5b8def" stroke-width="2"/>
+    <text x="630" y="268" font-size="14" font-weight="bold" fill="#1d2635">Chief Information Security</text>
+    <text x="630" y="290" fill="#647082">SaaS · Remote-first</text>
+    <rect x="630" y="308" width="94" height="24" rx="12" fill="#e6f3ec"/>
+    <text x="677" y="324" fill="#2f9e6e" text-anchor="middle">2nd round</text>
+    <text x="812" y="324" fill="#93a0b4">Thu 14:00</text>
+
+    <rect x="608" y="374" width="270" height="120" rx="12" fill="#ffffff" stroke="#e4e8ee"/>
+    <text x="630" y="404" font-size="14" font-weight="bold" fill="#1d2635">Information Security Officer</text>
+    <text x="630" y="426" fill="#647082">Public sector · Hybrid</text>
+    <rect x="630" y="444" width="82" height="24" rx="12" fill="#e6f3ec"/>
+    <text x="671" y="460" fill="#2f9e6e" text-anchor="middle">Interview</text>
+    <text x="812" y="460" fill="#93a0b4">Mon</text>
+
+    <!-- OFFER -->
+    <text x="894" y="222" font-size="13" font-weight="bold" fill="#647082" letter-spacing="1">OFFER</text>
+    <rect x="894" y="238" width="270" height="140" rx="12" fill="#ffffff" stroke="#2f9e6e" stroke-width="2"/>
+    <text x="916" y="268" font-size="14" font-weight="bold" fill="#1d2635">Head of Information Security</text>
+    <text x="916" y="290" fill="#647082">Scale-up · London / Hybrid</text>
+    <rect x="916" y="308" width="56" height="24" rx="12" fill="#e6f3ec"/>
+    <text x="944" y="324" fill="#2f9e6e" text-anchor="middle">Offer</text>
+    <rect x="982" y="308" width="120" height="24" rx="12" fill="#f0f2f6"/>
+    <text x="1042" y="324" fill="#647082" text-anchor="middle">Outside IR35</text>
+    <text x="916" y="360" font-size="13" fill="#93a0b4">Reply due Friday</text>
+  </g>
+</svg>

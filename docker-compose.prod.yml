@@ -1,0 +1,13 @@
+# VM-only overlay — applied explicitly with -f. Joins the shared edge network
+# under the alias Caddy proxies to (reverse_proxy apps:3000).
+services:
+  app:
+    networks:
+      default: {}
+      edge:
+        aliases:
+          - apps
+
+networks:
+  edge:
+    external: true

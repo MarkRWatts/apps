@@ -1,0 +1,12 @@
+{
+	auto_https off
+}
+
+:3000 {
+	root * /srv
+	encode gzip
+	file_server
+
+	header /assets/* Cache-Control "public, max-age=86400"
+	header /        Cache-Control "no-cache"
+}

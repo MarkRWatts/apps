@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    # No host port here — docker-compose.override.yml adds one for local dev,
+    # docker-compose.prod.yml joins the edge network instead.
