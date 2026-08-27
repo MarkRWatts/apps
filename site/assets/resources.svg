@@ -1,0 +1,72 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Illustrative Beszel-style host + per-container resource dashboard -->
+  <rect width="1200" height="750" fill="#0b1018"/>
+
+  <!-- top bar -->
+  <rect width="1200" height="64" fill="#111826"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#1f2937" stroke-width="2"/>
+  <rect x="36" y="20" width="24" height="24" rx="6" fill="#8b5cf6"/>
+  <text x="72" y="38" font-size="17" font-weight="bold" fill="#e9e7e0">Beszel</text>
+  <text x="1035" y="38" font-size="13" fill="#8b93a3" text-anchor="end">srvclaudedockerapps</text>
+
+  <!-- big gauges row -->
+  <g>
+    <circle cx="170" cy="230" r="86" fill="none" stroke="#1f2937" stroke-width="16"/>
+    <circle cx="170" cy="230" r="86" fill="none" stroke="#8b5cf6" stroke-width="16" stroke-linecap="round" stroke-dasharray="97 540" transform="rotate(-90 170 230)"/>
+    <text x="170" y="222" font-size="34" font-weight="bold" fill="#e9e7e0" text-anchor="middle">18%</text>
+    <text x="170" y="250" font-size="14" fill="#8b93a3" text-anchor="middle">CPU</text>
+
+    <circle cx="450" cy="230" r="86" fill="none" stroke="#1f2937" stroke-width="16"/>
+    <circle cx="450" cy="230" r="86" fill="none" stroke="#5b8def" stroke-width="16" stroke-linecap="round" stroke-dasharray="248 540" transform="rotate(-90 450 230)"/>
+    <text x="450" y="222" font-size="34" font-weight="bold" fill="#e9e7e0" text-anchor="middle">46%</text>
+    <text x="450" y="250" font-size="14" fill="#8b93a3" text-anchor="middle">Memory</text>
+
+    <circle cx="730" cy="230" r="86" fill="none" stroke="#1f2937" stroke-width="16"/>
+    <circle cx="730" cy="230" r="86" fill="none" stroke="#d9a23a" stroke-width="16" stroke-linecap="round" stroke-dasharray="330 540" transform="rotate(-90 730 230)"/>
+    <text x="730" y="222" font-size="34" font-weight="bold" fill="#e9e7e0" text-anchor="middle">61%</text>
+    <text x="730" y="250" font-size="14" fill="#8b93a3" text-anchor="middle">Disk</text>
+
+    <!-- network sparkline card -->
+    <rect x="900" y="144" width="264" height="172" rx="12" fill="#111826" stroke="#1f2937"/>
+    <text x="924" y="174" font-size="13" fill="#8b93a3">Network</text>
+    <text x="924" y="204" font-size="22" font-weight="bold" fill="#e9e7e0">3.2 MB/s</text>
+    <polyline points="924,290 954,270 984,282 1014,240 1044,266 1074,220 1104,254 1134,232" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+  </g>
+
+  <!-- per-container table -->
+  <g>
+    <text x="36" y="380" font-size="13" font-weight="bold" fill="#8b93a3" letter-spacing="1">CONTAINERS</text>
+    <rect x="36" y="396" width="1128" height="310" rx="12" fill="#111826" stroke="#1f2937"/>
+
+    <g font-size="13">
+      <text x="60" y="432" fill="#8b93a3">NAME</text>
+      <text x="560" y="432" fill="#8b93a3">CPU</text>
+      <text x="760" y="432" fill="#8b93a3">MEMORY</text>
+      <text x="980" y="432" fill="#8b93a3">NET</text>
+      <line x1="60" y1="446" x2="1140" y2="446" stroke="#1f2937"/>
+
+      <text x="60" y="480" fill="#e9e7e0">refresh-app-1</text>
+      <rect x="560" y="466" width="80" height="8" rx="4" fill="#1f2937"/><rect x="560" y="466" width="18" height="8" rx="4" fill="#5b8def"/>
+      <text x="760" y="480" fill="#e9e7e0">210 MB</text>
+      <text x="980" y="480" fill="#e9e7e0">62 KB/s</text>
+
+      <line x1="60" y1="500" x2="1140" y2="500" stroke="#1f2937"/>
+      <text x="60" y="534" fill="#e9e7e0">jobapptracker-app-1</text>
+      <rect x="560" y="520" width="80" height="8" rx="4" fill="#1f2937"/><rect x="560" y="520" width="12" height="8" rx="4" fill="#5b8def"/>
+      <text x="760" y="534" fill="#e9e7e0">168 MB</text>
+      <text x="980" y="534" fill="#e9e7e0">18 KB/s</text>
+
+      <line x1="60" y1="554" x2="1140" y2="554" stroke="#1f2937"/>
+      <text x="60" y="588" fill="#e9e7e0">mediavault-app-1</text>
+      <rect x="560" y="574" width="80" height="8" rx="4" fill="#1f2937"/><rect x="560" y="574" width="28" height="8" rx="4" fill="#5b8def"/>
+      <text x="760" y="588" fill="#e9e7e0">302 MB</text>
+      <text x="980" y="588" fill="#e9e7e0">140 KB/s</text>
+
+      <line x1="60" y1="608" x2="1140" y2="608" stroke="#1f2937"/>
+      <text x="60" y="642" fill="#e9e7e0">monitoring-beszel-agent</text>
+      <rect x="560" y="628" width="80" height="8" rx="4" fill="#1f2937"/><rect x="560" y="628" width="6" height="8" rx="4" fill="#5b8def"/>
+      <text x="760" y="642" fill="#e9e7e0">14 MB</text>
+      <text x="980" y="642" fill="#e9e7e0">2 KB/s</text>
+    </g>
+  </g>
+</svg>

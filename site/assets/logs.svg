@@ -1,0 +1,43 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Illustrative Dozzle-style live container log tail -->
+  <rect width="1200" height="750" fill="#0b1018"/>
+
+  <!-- top bar -->
+  <rect width="1200" height="64" fill="#111826"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#1f2937" stroke-width="2"/>
+  <rect x="36" y="20" width="24" height="24" rx="6" fill="#fb923c"/>
+  <text x="72" y="38" font-size="17" font-weight="bold" fill="#e9e7e0">Dozzle</text>
+  <circle cx="1120" cy="32" r="6" fill="#3ecf8e"/>
+  <text x="1104" y="37" font-size="13" fill="#8b93a3" text-anchor="end">live</text>
+
+  <!-- container tabs -->
+  <g font-size="13">
+    <rect x="36" y="92" width="150" height="34" rx="8" fill="#1f2733" stroke="#fb923c"/>
+    <text x="111" y="114" fill="#e9e7e0" text-anchor="middle">refresh-app-1</text>
+    <rect x="198" y="92" width="176" height="34" rx="8" fill="#111826" stroke="#1f2937"/>
+    <text x="286" y="114" fill="#8b93a3" text-anchor="middle">jobapptracker-app-1</text>
+    <rect x="386" y="92" width="164" height="34" rx="8" fill="#111826" stroke="#1f2937"/>
+    <text x="468" y="114" fill="#8b93a3" text-anchor="middle">mediavault-app-1</text>
+    <rect x="562" y="92" width="120" height="34" rx="8" fill="#111826" stroke="#1f2937"/>
+    <text x="622" y="114" fill="#8b93a3" text-anchor="middle">apps-app-1</text>
+  </g>
+
+  <!-- log panel -->
+  <rect x="36" y="148" width="1128" height="558" rx="12" fill="#0d1420" stroke="#1f2937"/>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">
+    <text x="60" y="184" fill="#5f6b7d">17:42:03.114</text><text x="200" y="184" fill="#8b93a3">GET /api/recipes?tag=weeknight 200 in 42ms</text>
+    <text x="60" y="212" fill="#5f6b7d">17:42:03.980</text><text x="200" y="212" fill="#8b93a3">GET /api/recipes/1842 200 in 12ms</text>
+    <text x="60" y="240" fill="#5f6b7d">17:42:05.221</text><text x="200" y="240" fill="#3ecf8e">Scraper cache hit — helloFresh_recipe_1842.html</text>
+    <text x="60" y="268" fill="#5f6b7d">17:42:07.556</text><text x="200" y="268" fill="#8b93a3">POST /api/plan/week 201 in 88ms</text>
+    <text x="60" y="296" fill="#5f6b7d">17:42:09.003</text><text x="200" y="296" fill="#d9a23a">warn: image cache miss, refetching thumbnail</text>
+    <text x="60" y="324" fill="#5f6b7d">17:42:09.410</text><text x="200" y="324" fill="#8b93a3">GET /api/recipes?tag=weeknight 200 in 39ms</text>
+    <text x="60" y="352" fill="#5f6b7d">17:42:11.877</text><text x="200" y="352" fill="#8b93a3">GET /_next/static/chunks/main.js 200 in 3ms</text>
+    <text x="60" y="380" fill="#5f6b7d">17:42:14.229</text><text x="200" y="380" fill="#3ecf8e">Ready in 1.2s</text>
+    <text x="60" y="408" fill="#5f6b7d">17:42:16.014</text><text x="200" y="408" fill="#8b93a3">GET /api/households/current 200 in 6ms</text>
+    <text x="60" y="436" fill="#5f6b7d">17:42:18.665</text><text x="200" y="436" fill="#8b93a3">GET /api/recipes/1842/steps 200 in 15ms</text>
+    <text x="60" y="464" fill="#5f6b7d">17:42:20.302</text><text x="200" y="464" fill="#8b93a3">POST /api/plan/week/items 201 in 71ms</text>
+    <text x="60" y="492" fill="#5f6b7d">17:42:22.719</text><text x="200" y="492" fill="#d9a23a">warn: slow query (312ms) — plan.findMany</text>
+    <text x="60" y="520" fill="#5f6b7d">17:42:24.001</text><text x="200" y="520" fill="#8b93a3">GET /api/recipes?tag=weeknight 200 in 44ms</text>
+  </g>
+  <rect x="60" y="546" width="8" height="16" fill="#fb923c"/>
+</svg>
