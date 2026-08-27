@@ -9,7 +9,7 @@ Links to:
 | --- | --- |
 | re:Fresh | refresh.markrwatts.com |
 | MediaVault | mediavault.markrwatts.com |
-| Jingle Jotter | jinglejotter.markrwatts.com |
+| Jingle Jotter | staging.jinglejotter.com |
 | Job Application Tracker | jobapptracker.markrwatts.com |
 
 Pure static HTML/CSS in `site/`, served by Caddy's `file_server` on port 3000
