@@ -1,0 +1,101 @@
+<svg viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, sans-serif">
+  <!-- Illustrative composite of the monitoring stack: resource gauges (Beszel),
+       an uptime list (Uptime Kuma), and a live log tail (Dozzle) -->
+  <rect width="1200" height="750" fill="#0b1018"/>
+
+  <!-- top bar -->
+  <rect width="1200" height="64" fill="#111826"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#1f2937" stroke-width="2"/>
+  <rect x="36" y="20" width="24" height="24" rx="6" fill="#2dd4bf"/>
+  <text x="72" y="38" font-size="17" font-weight="bold" fill="#e9e7e0">Monitoring</text>
+  <circle cx="1120" cy="32" r="6" fill="#3ecf8e"/>
+  <text x="1104" y="37" font-size="13" fill="#8b93a3" text-anchor="end">all systems up</text>
+
+  <!-- column 1: resource gauges -->
+  <g>
+    <text x="36" y="110" font-size="13" font-weight="bold" fill="#8b93a3" letter-spacing="1">HOST</text>
+    <rect x="36" y="126" width="330" height="580" rx="12" fill="#111826" stroke="#1f2937"/>
+    <text x="60" y="162" font-size="14" fill="#e9e7e0" font-weight="bold">srvclaudedockerapps</text>
+
+    <!-- CPU gauge -->
+    <circle cx="130" cy="250" r="58" fill="none" stroke="#1f2937" stroke-width="12"/>
+    <circle cx="130" cy="250" r="58" fill="none" stroke="#2dd4bf" stroke-width="12" stroke-linecap="round" stroke-dasharray="218 364" transform="rotate(-90 130 250)"/>
+    <text x="130" y="243" font-size="26" font-weight="bold" fill="#e9e7e0" text-anchor="middle">18%</text>
+    <text x="130" y="264" font-size="12" fill="#8b93a3" text-anchor="middle">CPU</text>
+
+    <!-- RAM gauge -->
+    <circle cx="270" cy="250" r="58" fill="none" stroke="#1f2937" stroke-width="12"/>
+    <circle cx="270" cy="250" r="58" fill="none" stroke="#5b8def" stroke-width="12" stroke-linecap="round" stroke-dasharray="167 364" transform="rotate(-90 270 250)"/>
+    <text x="270" y="243" font-size="26" font-weight="bold" fill="#e9e7e0" text-anchor="middle">46%</text>
+    <text x="270" y="264" font-size="12" fill="#8b93a3" text-anchor="middle">RAM</text>
+
+    <!-- Disk bar -->
+    <text x="60" y="358" font-size="12" fill="#8b93a3">Disk</text>
+    <text x="342" y="358" font-size="12" fill="#8b93a3" text-anchor="end">61%</text>
+    <rect x="60" y="368" width="282" height="10" rx="5" fill="#1f2937"/>
+    <rect x="60" y="368" width="172" height="10" rx="5" fill="#d9a23a"/>
+
+    <!-- mini network sparkline -->
+    <text x="60" y="418" font-size="12" fill="#8b93a3">Network</text>
+    <polyline points="60,470 90,455 120,462 150,430 180,448 210,410 240,438 270,420 300,444 330,405 342,432" fill="none" stroke="#2dd4bf" stroke-width="2.5"/>
+
+    <text x="60" y="530" font-size="12" fill="#8b93a3">4 containers · 12d uptime</text>
+  </g>
+
+  <!-- column 2: uptime list -->
+  <g>
+    <text x="404" y="110" font-size="13" font-weight="bold" fill="#8b93a3" letter-spacing="1">UPTIME</text>
+    <rect x="404" y="126" width="330" height="580" rx="12" fill="#111826" stroke="#1f2937"/>
+
+    <g font-size="13">
+      <circle cx="432" cy="168" r="5" fill="#3ecf8e"/>
+      <text x="448" y="173" fill="#e9e7e0">re:Fresh</text>
+      <text x="714" y="173" fill="#3ecf8e" text-anchor="end">Up</text>
+
+      <line x1="428" y1="196" x2="710" y2="196" stroke="#1f2937"/>
+      <circle cx="432" cy="222" r="5" fill="#3ecf8e"/>
+      <text x="448" y="227" fill="#e9e7e0">MediaVault</text>
+      <text x="714" y="227" fill="#3ecf8e" text-anchor="end">Up</text>
+
+      <line x1="428" y1="250" x2="710" y2="250" stroke="#1f2937"/>
+      <circle cx="432" cy="276" r="5" fill="#3ecf8e"/>
+      <text x="448" y="281" fill="#e9e7e0">Job Tracker</text>
+      <text x="714" y="281" fill="#3ecf8e" text-anchor="end">Up</text>
+
+      <line x1="428" y1="304" x2="710" y2="304" stroke="#1f2937"/>
+      <circle cx="432" cy="330" r="5" fill="#d9a23a"/>
+      <text x="448" y="335" fill="#e9e7e0">Jingle Jotter</text>
+      <text x="714" y="335" fill="#d9a23a" text-anchor="end">Down</text>
+
+      <line x1="428" y1="358" x2="710" y2="358" stroke="#1f2937"/>
+      <circle cx="432" cy="384" r="5" fill="#3ecf8e"/>
+      <text x="448" y="389" fill="#e9e7e0">apps landing page</text>
+      <text x="714" y="389" fill="#3ecf8e" text-anchor="end">Up</text>
+    </g>
+
+    <line x1="428" y1="416" x2="710" y2="416" stroke="#1f2937"/>
+    <text x="432" y="450" font-size="12" fill="#8b93a3">30d uptime</text>
+    <rect x="432" y="462" width="278" height="26" rx="4" fill="#132018"/>
+    <rect x="432" y="462" width="266" height="26" rx="4" fill="#153524"/>
+    <text x="446" y="479" font-size="11" fill="#3ecf8e">99.9%</text>
+  </g>
+
+  <!-- column 3: log tail -->
+  <g>
+    <text x="772" y="110" font-size="13" font-weight="bold" fill="#8b93a3" letter-spacing="1">LOGS</text>
+    <rect x="772" y="126" width="392" height="580" rx="12" fill="#0d1420" stroke="#1f2937"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5">
+      <text x="792" y="160" fill="#5b8def">refresh</text><text x="854" y="160" fill="#8b93a3">GET /api/recipes 200 42ms</text>
+      <text x="792" y="184" fill="#3ecf8e">jobapptracker</text><text x="912" y="184" fill="#8b93a3">migration ok</text>
+      <text x="792" y="208" fill="#d9a23a">mediavault</text><text x="884" y="208" fill="#8b93a3">scan: 3 new files</text>
+      <text x="792" y="232" fill="#5b8def">refresh</text><text x="854" y="232" fill="#8b93a3">GET /api/recipes 200 38ms</text>
+      <text x="792" y="256" fill="#8b93a3">apps</text><text x="836" y="256" fill="#8b93a3">GET / 200 4ms</text>
+      <text x="792" y="280" fill="#3ecf8e">jobapptracker</text><text x="912" y="280" fill="#8b93a3">session created</text>
+      <text x="792" y="304" fill="#d9a23a">mediavault</text><text x="884" y="304" fill="#8b93a3">thumbnail cached</text>
+      <text x="792" y="328" fill="#5b8def">refresh</text><text x="854" y="328" fill="#8b93a3">GET /api/plan 200 51ms</text>
+      <text x="792" y="352" fill="#8b93a3">apps</text><text x="836" y="352" fill="#8b93a3">GET / 200 3ms</text>
+      <text x="792" y="376" fill="#3ecf8e">jobapptracker</text><text x="912" y="376" fill="#8b93a3">POST /applications 201</text>
+    </g>
+    <rect x="792" y="700" width="6" height="14" fill="#2dd4bf"/>
+  </g>
+</svg>
